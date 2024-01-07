@@ -7,7 +7,7 @@ import { Carousel } from "flowbite-react";
 
 const CakeTile = ({ menuItem }) => {
   return (
-    <div className="text-center flex flex-col items-center justify-center space-y-3 py-3">
+    <div className="text-center flex flex-col items-center justify-center space-y-3 ">
       <img src={menuItem?.img} alt="assorted cake" className="h-48" />
       <h3 className="font-semibold">{menuItem?.title}</h3>
       <p className="text-gray-700 w-2/3">{menuItem?.description}</p>

@@ -2,8 +2,10 @@ import logoImg from "../../../assets/images/veescakes.png";
 import landingCake from "../../../assets/images/spongecake.png";
 import { Link } from "react-router-dom";
 import RoundButton from "../../../components/Button/RoundedButton";
+import cc from "country-currency-data";
+import codes from "country-calling-code";
 
-const FirstScreen = () => {
+const FirstScreen = () => { 
   const menuItems = [
     {
       href: "/",
@@ -26,6 +28,9 @@ const FirstScreen = () => {
       label: "Testimonials",
     },
   ];
+
+  console.log(cc);
+  console.log(codes);
 
   return (
     <section className="w-screen h-screen bg-landing-image">
