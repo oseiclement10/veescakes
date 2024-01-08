@@ -1,9 +1,9 @@
-import React from "react";
 import { GiFoodTruck, GiCakeSlice } from "react-icons/gi";
 import { MdOutlineAddIcCall } from "react-icons/md";
 import RoundButton from "./../../../components/Button/RoundedButton";
 import menuItems from "../../../constants/menuItems";
 import { Carousel } from "flowbite-react";
+import  PropTypes from "prop-types";
 
 const CakeTile = ({ menuItem }) => {
   return (
@@ -17,6 +17,15 @@ const CakeTile = ({ menuItem }) => {
   );
 };
 
+CakeTile.propTypes={
+  menuItem:PropTypes.shape({
+    img:PropTypes.string.isRequired,
+    title:PropTypes.string.isRequired,
+    description:PropTypes.string.isRequired,
+    price:PropTypes.number.isRequired
+  })
+}
+
 const CakeTilesContainer = ({ menu }) => {
   return (
     <section className="py-6">
@@ -29,6 +38,15 @@ const CakeTilesContainer = ({ menu }) => {
     </section>
   );
 };
+
+CakeTilesContainer.propTypes = {
+  menu:PropTypes.shape({
+    title:PropTypes.string,
+    items:PropTypes.arrayOf(PropTypes.shape({
+      title:PropTypes.string.isRequired
+    })),
+  })
+}
 
 
 const SecondScreen = () => {
