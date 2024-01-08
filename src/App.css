@@ -1,6 +1,10 @@
-.bg-landing-image{
-    background: url("./assets/images//background.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.bg-landing-image {
+  background: url("./assets/images//background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
+
+
+

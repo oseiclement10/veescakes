@@ -1,12 +1,13 @@
-import React from "react";
 import FirstScreen from "./components/FirstScreen";
 import SecondScreen from "./components/SecondScreen";
+import ThirdScreen from "./components/ThirdScreen";
 
 const Home = () => {
   return (
     <section>
-       <FirstScreen/>
-       <SecondScreen/>
+      <FirstScreen />
+      <SecondScreen />
+      <ThirdScreen />
     </section>
   );
 };

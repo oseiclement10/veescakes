@@ -93,7 +93,7 @@ const SecondScreen = () => {
           </div>
         </article>
 
-        <article className="py-6">
+      <article className="pt-6 pb-2">
           <header className="text-5xl font-serif font-bold text-burgandyDark text-center  mt-4 mb-10">
             Browse <br />
             Our special menu
